@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:23.11.1-alpine3.21
 COPY . .
 run apk --no-cache add --virtual native-deps \
   g++ gcc libgcc libstdc++ linux-headers make python && \
